@@ -6,7 +6,6 @@ const API = axios.create({
 });
 
 
-// https://emkc.org/api/v2/piston
 
 export const executeCode = async (language, sourceCode) => {
   const response = await API.post("/execute", {
